@@ -1,0 +1,18 @@
+tool: MetaPhlAn
+
+domain: Metagenomics
+
+resource_behavior:
+  cpu_scaling: moderate
+  memory_scaling: low
+  io_intensity: low
+
+recommendations:
+  base_ram_gb: 8
+  ram_per_10gb_data: 2
+  recommended_threads: 8
+  runtime_per_10gb_hours: 0.5
+
+scheduler:
+  slurm:
+    partition: metagenomics

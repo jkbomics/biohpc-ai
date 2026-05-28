@@ -1,0 +1,18 @@
+tool: SPAdes
+
+domain: Genome Assembly
+
+resource_behavior:
+  cpu_scaling: moderate
+  memory_scaling: extreme
+  io_intensity: high
+
+recommendations:
+  base_ram_gb: 64
+  ram_per_10gb_data: 12
+  recommended_threads: 32
+  runtime_per_10gb_hours: 2.5
+
+scheduler:
+  slurm:
+    partition: assembly

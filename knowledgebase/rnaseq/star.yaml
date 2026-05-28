@@ -1,0 +1,18 @@
+tool: STAR
+
+domain: RNA-seq
+
+resource_behavior:
+  cpu_scaling: excellent
+  memory_scaling: high
+  io_intensity: medium
+
+recommendations:
+  base_ram_gb: 32
+  ram_per_10gb_data: 4
+  recommended_threads: 16
+  runtime_per_10gb_hours: 0.5
+
+scheduler:
+  slurm:
+    partition: compute

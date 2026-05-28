@@ -1,0 +1,18 @@
+tool: HISAT2
+
+domain: RNA-seq
+
+resource_behavior:
+  cpu_scaling: good
+  memory_scaling: moderate
+  io_intensity: low
+
+recommendations:
+  base_ram_gb: 16
+  ram_per_10gb_data: 2
+  recommended_threads: 8
+  runtime_per_10gb_hours: 0.7
+
+scheduler:
+  slurm:
+    partition: compute

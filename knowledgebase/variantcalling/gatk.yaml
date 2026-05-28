@@ -1,0 +1,18 @@
+tool: GATK
+
+domain: Variant Calling
+
+resource_behavior:
+  cpu_scaling: moderate
+  memory_scaling: high
+  io_intensity: medium
+
+recommendations:
+  base_ram_gb: 32
+  ram_per_10gb_data: 6
+  recommended_threads: 16
+  runtime_per_10gb_hours: 1.0
+
+scheduler:
+  slurm:
+    partition: variant

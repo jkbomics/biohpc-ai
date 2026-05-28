@@ -1,0 +1,18 @@
+tool: FragPipe
+
+domain: Proteomics
+
+resource_behavior:
+  cpu_scaling: high
+  memory_scaling: high
+  io_intensity: high
+
+recommendations:
+  base_ram_gb: 32
+  ram_per_10gb_data: 10
+  recommended_threads: 16
+  runtime_per_10gb_hours: 1.5
+
+scheduler:
+  slurm:
+    partition: proteomics

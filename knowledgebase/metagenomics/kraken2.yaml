@@ -1,0 +1,18 @@
+tool: Kraken2
+
+domain: Metagenomics
+
+resource_behavior:
+  cpu_scaling: excellent
+  memory_scaling: very_high
+  io_intensity: medium
+
+recommendations:
+  base_ram_gb: 64
+  ram_per_10gb_data: 6
+  recommended_threads: 32
+  runtime_per_10gb_hours: 0.4
+
+scheduler:
+  slurm:
+    partition: metagenomics
